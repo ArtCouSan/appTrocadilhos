@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lista de trocadilhos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-list>
+        <ion-list-header>
+          Jogos
+        </ion-list-header>
+        <div *ngFor="let item of (trocadilhos | async)">
+            <ion-item *ngIf="item.categoria == 'Jogos'">{{item.id}}</ion-item>
+        </div>
+    </ion-list>
+    <ion-list>
+        <ion-list-header>
+            Teste
+          </ion-list-header>
+          <div *ngFor="let item of (trocadilhos | async)">
+              <ion-item *ngIf="item.categoria == 'Teste'">{{item.id}}</ion-item>
+          </div>
+    </ion-list>
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Aleatórios</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-slides>
+    <ion-slide *ngFor="let item of (trocadilhos | async)">
+        <ion-card >
+
+            <ion-card-header class="">
+              
+            </ion-card-header>
+          
+            <ion-card-content>
+              {{item.trocadilho}}
+            </ion-card-content>
+          
+          </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-fab left bottom>
+      <button ion-fab color="blue"><ion-icon name="arrow-dropright"></ion-icon></button>
+      <ion-fab-list side="right">
+        <button ion-fab><ion-icon color="primary" name="logo-facebook"></ion-icon></button>
+        <button ion-fab><ion-icon color="dark" name="logo-twitter"></ion-icon></button>
+      </ion-fab-list>
+  </ion-fab>
+
+ 
+
+</ion-content>
