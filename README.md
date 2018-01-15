@@ -1,7 +1,7 @@
 # Projeto
-
+```
   App trocadilhos
-  
+ ``` 
 # Utilização
 ```
 - Linguagem: AngularJS 4 + Ionic 3 
