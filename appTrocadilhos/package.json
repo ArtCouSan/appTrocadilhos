@@ -1,5 +1,5 @@
 {
-  "name": "appTrocadilhos",
+  "name": "apptrocadilhos",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
@@ -27,7 +27,7 @@
     "@ionic-native/status-bar": "4.4.0",
     "@ionic/storage": "2.1.3",
     "angularfire2": "^5.0.0-rc.4",
-    "cordova-android": "7.0.0",
+    "cordova-android": "^6.2.3",
     "cordova-browser": "5.0.3",
     "cordova-plugin-device": "^1.1.4",
     "cordova-plugin-ionic-webview": "^1.1.16",
@@ -59,8 +59,8 @@
       "cordova-plugin-ionic-webview": {}
     },
     "platforms": [
-      "android",
-      "browser"
+      "browser",
+      "android"
     ]
   }
 }
