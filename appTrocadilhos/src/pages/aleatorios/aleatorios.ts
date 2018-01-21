@@ -11,13 +11,18 @@ import { NavParams } from 'ionic-angular/navigation/nav-params';
 })
 export class AleatorioPage {
 
+  // Instancia dos arrays
   trocadilhos: FirebaseListObservable<TrocadilhoItem[]>
+  items: Array<TrocadilhoItem>;
 
-  constructor(public navCtrl: NavController, 
-    public navParams: NavParams,
-    private database: AngularFireDatabase) {
-    
+  constructor(private database: AngularFireDatabase) {
     this.trocadilhos = this.database.list('trocadilhos-list');
+      this.trocadilhos.forEach((item) =>{
+      this.items = [];
+      item.forEach(_item => {
+       this.items.push(_item);
+      });
+    });
 
   }
 

@@ -3,36 +3,33 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Aleatórios</ion-title>
+    <ion-title>Trocadilho</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content class="back" padding>
   <ion-slides>
-    <ion-slide *ngFor="let item of items">
-        <ion-fab right top>
-            <button ion-fab mini>{{item.id}}</button>
-       </ion-fab>
+    <ion-slide>
         <ion-card class="card">
             <ion-card-content>
-                <h1 class="titulo">{{item.titulo}}</h1>
+                <h1 class="titulo">{{titulo}}</h1>
               </ion-card-content>
         </ion-card>
         <ion-card >
             <ion-card-content>
-              {{item.trocadilho}}
+              {{trocadilho}}
             </ion-card-content>
           </ion-card>
           <ion-card >
               <ion-card-content>
-                {{item.resposta}}
+                {{resposta}}
               </ion-card-content>
           </ion-card>
     </ion-slide>
   </ion-slides>
 </ion-content>
 <ion-footer>
-  <ion-toolbar>
-    <label>Developed by ArtCousan</label>
-  </ion-toolbar>
+    <ion-toolbar>
+        <label>Developed by ArtCousan</label>
+      </ion-toolbar>
 </ion-footer>

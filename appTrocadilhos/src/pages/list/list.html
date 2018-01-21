@@ -8,20 +8,15 @@
 </ion-header>
 
 <ion-content>
+    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
     <ion-list>
-        <ion-list-header>
-          Jogos
-        </ion-list-header>
-        <div *ngFor="let item of (trocadilhos | async)">
-            <ion-item *ngIf="item.categoria == 'Jogos'">{{item.id}}</ion-item>
-        </div>
-    </ion-list>
-    <ion-list>
-        <ion-list-header>
-            Teste
-          </ion-list-header>
-          <div *ngFor="let item of (trocadilhos | async)">
-              <ion-item *ngIf="item.categoria == 'Teste'">{{item.id}}</ion-item>
-          </div>
+        <ion-item *ngFor="let item of items" (click)="selectTrocadilho(item)">
+                {{item.id}}  -   {{ item.titulo }}
+        </ion-item>
     </ion-list>
 </ion-content>
+<ion-footer>
+    <ion-toolbar>
+        <label>Developed by ArtCousan</label>
+      </ion-toolbar>
+</ion-footer>
