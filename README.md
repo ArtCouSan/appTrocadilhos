@@ -6,7 +6,7 @@
 ```
 - Linguagem: TypeScript 
 - Banco de Dados: Firebase + AngularFire2
-- IDE: Visual Studio Code, Json Editor
+- IDE: Visual Studio Code, Json Editor, Genymotion
 - Framework Server: AngularJS 4 + Ionic 3
 ```
 
