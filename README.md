@@ -13,11 +13,11 @@
 # Screens
 
 <h3 align="center">Imagem do Aleatorios</h3>
-<p align="center"><img src="https://artcousan.github.io/Projeto_Integrador_2_Semestre/Projeto/PI2/home.png"></p>
+<p align="center"><img src="https://artcousan.github.io/appTrocadilhos/appTrocadilhos/resources/imagens/aleatorios.png"></p>
 <h3 align="center">Imagem da Lista </h3>
-<p align="center"><img src="https://artcousan.github.io/Projeto_Integrador_2_Semestre/Projeto/PI2/relatorio.png"></p>
+<p align="center"><img src="https://artcousan.github.io/appTrocadilhos/appTrocadilhos/resources/imagens/lista.png"></p>
 <h3 align="center">Imagem do Menu</h3>
-<p align="center"><img src="https://artcousan.github.io/Projeto_Integrador_2_Semestre/Projeto/PI2/venda.png"></p>
+<p align="center"><img src="https://artcousan.github.io/appTrocadilhos/appTrocadilhos/resources/imagens/menu.png"></p>
 
 # Autor
 
